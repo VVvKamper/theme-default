@@ -32,7 +32,7 @@ function fish_prompt
     echo -n -s $error_color $fish $normal_color
   end
   
-  echo -n -s $hostname_color (hostname) $normal_color
+  echo -n -s " " $hostname_color (hostname) $normal_color
 
   if git_is_repo
     if test "$theme_short_path" = 'yes'
